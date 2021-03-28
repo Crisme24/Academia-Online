@@ -1,8 +1,10 @@
-import { query } from 'express';
+import query  from './query';
 import { IResolvers } from 'graphql-tools';
+import type from './type';
 
 const resolversMap : IResolvers = {
-    ...query
+    ...query,
+    ...type
 };
 
 export default resolversMap;
