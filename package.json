@@ -1,0 +1,33 @@
+{
+  "name": "academia-online",
+  "version": "1.0.0",
+  "description": "API GraphQL Academia Online",
+  "main": "build/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeimy Triviño <crisme-24@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/compression": "^1.7.0",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^14.14.37",
+    "apollo-server-express": "^2.22.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "graphql-import-node": "0.0.4",
+    "graphql-playground-middleware-express": "^1.7.22",
+    "graphql-tools": "^7.0.4",
+    "http": "0.0.1-security",
+    "lodash": "^4.17.21",
+    "ncp": "^2.0.0",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0"
+  }
+}
