@@ -21,7 +21,30 @@ const query : IResolvers = {
 
             return resultado;
         },
+        cursos(): any {
+            return database.cursos;
+        },
+        curso(__: void, { curso }): any {
+            //Aqui comparamos que el id que introducimos como parametro es igual al de la bbdd
+            const resultado =  database.cursos.filter(curso_ => curso_.id === curso)[0];
 
+            if(resultado === undefined) {
+                return {
+                    id: '-1',
+                    title: `No se ha encontrado el curso con el id ${curso}`,
+                    description: '',
+                    clases: -1,
+                    time: 0.0,
+                    logo: '',
+                    level: 'TODOS',
+                    path: '',
+                    teacher: '',
+                    reviews: []
+                }
+            }
+
+            return resultado;
+        },
     }
 };
 

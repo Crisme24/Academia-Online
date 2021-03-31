@@ -4,6 +4,10 @@ type Query {
     estudiantes: [Estudiante!]!
         "Detalles de un estudiante de la Academia"
     estudiante(id: ID!): Estudiante!
+    "Lista de los cursoa de la Academia"
+    cursos: [Curso!]!
+     "Detalles de un estudiante de la Academia"
+    curso(curso: ID!): Curso!
 }
 
 "Información de los estudiantes"
